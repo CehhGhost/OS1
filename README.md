@@ -7,3 +7,5 @@
 строку, в которой слова разделяются пробелами. Слова состоят из
 букв. Все остальные символы являются разделителями слов.
 ### 2) Приведено решение задачи на C(с использованием двух единиц компиляции):
+* [main.c](https://github.com/CehhGhost/ABC2/blob/main/Assembled/main.s)
+* [get_maxsymb_and_minsymb.s](https://github.com/CehhGhost/ABC2/blob/main/Assembled/get_maxsymb_and_minsymb.s)
