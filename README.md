@@ -11,7 +11,7 @@
 ### 3) Приведено решение задачи на C(с использованием двух единиц компиляции):
 * [main.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/main.c)
 * [get_new_line.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/get_new_line.c)
-### 4) Для запуска программы необходимо передать в команднуй строку имена входного и выходного файлов, примеры таковых соответсвенно после работы с программой(одинаковым числам соответсвует принадлежность к одному и тому же тесту):
+### 4) Для запуска программы необходимо передать в команднуй строку имена входного и выходного файлов, примеры таковых соответсвенно после работы с программой(одинаковым числам соответсвует принадлежности к одному и тому же тесту):
 * [input1.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/input1.txt)
 * [output1.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/output1.txt)
 * [input2.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/input2.txt)
