@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
     if ((pid1 = fork()) < 0) {
         perror("fork");
         exit(EXIT_FAILURE);
-    } else if (pid1 == 0) { // first child process
+    } else if (pid1 == 0) {
         close(fd1[0]);
         close(fd2[0]);
         close(fd2[1]);
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
     if ((pid2 = fork()) < 0) {
         perror("fork");
         exit(EXIT_FAILURE);
-    } else if (pid2 == 0) { // second child process
+    } else if (pid2 == 0) {
         close(fd1[1]);
         close(fd2[0]);
 
