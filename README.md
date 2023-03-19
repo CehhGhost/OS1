@@ -22,3 +22,6 @@
 * [output4.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/output4.txt)
 * [input5.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/input5.txt)
 * [output5.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/output5.txt)
+## <br> На 5 баллов:
+### 1) Работа системы:
+![System](https://github.com/CehhGhost/OS1/blob/main/SecondProg/System2.png)
