@@ -56,3 +56,20 @@
 * [output4.txt](https://github.com/CehhGhost/OS1/blob/main/ThirdProg/Tests/output4.txt)
 * [input5.txt](https://github.com/CehhGhost/OS1/blob/main/ThirdProg/Tests/input5.txt)
 * [output5.txt](https://github.com/CehhGhost/OS1/blob/main/ThirdProg/Tests/output5.txt)
+## <br> На 7 баллов:
+### 1) Работа системы:
+![System](https://github.com/CehhGhost/OS1/blob/main/FourthProg/System4.png)
+### 2) Приведено решение задачи на C:
+* [main.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/main.c)
+* [get_new_line.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/get_new_line.c)
+### 3) Тесты:
+* [input1.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/input1.txt)
+* [output1.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/output1.txt)
+* [input2.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/input2.txt)
+* [output2.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/output2.txt)
+* [input3.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/input3.txt)
+* [output3.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/output3.txt)
+* [input4.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/input4.txt)
+* [output4.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/output4.txt)
+* [input5.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/input5.txt)
+* [output5.txt](https://github.com/CehhGhost/OS1/blob/main/FourthProg/Tests/output5.txt)
