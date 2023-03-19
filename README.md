@@ -6,7 +6,7 @@
 Разработать программу, которая ищет в ASCII-строке слова, начинающиеся с заглавной буквы и формирует из них новую
 строку, в которой слова разделяются пробелами. Слова состоят из
 букв. Все остальные символы являются разделителями слов.
-### 1) Работа системы:
+### 2) Работа системы:
 ![System](https://github.com/CehhGhost/OS1/blob/main/FirstProg/System.png)
 ### 3) Приведено решение задачи на C:
 * [main.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/main.c)
@@ -42,3 +42,17 @@
 ## <br> На 6 баллов:
 ### 1) Работа системы:
 ![System](https://github.com/CehhGhost/OS1/blob/main/ThirdProg/System3.png)
+### 2) Приведено решение задачи на C:
+* [main.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/main.c)
+* [get_new_line.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/get_new_line.c)
+### 3) Тесты:
+* [input1.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/input1.txt)
+* [output1.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/output1.txt)
+* [input2.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/input2.txt)
+* [output2.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/output2.txt)
+* [input3.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/input3.txt)
+* [output3.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/output3.txt)
+* [input4.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/input4.txt)
+* [output4.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/output4.txt)
+* [input5.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/input5.txt)
+* [output5.txt](https://github.com/CehhGhost/OS1/blob/main/SecondProg/Tests/output5.txt)
