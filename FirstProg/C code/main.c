@@ -19,13 +19,12 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
 
+    pid_t pid1, pid2, pid3;
     int fd1[2], fd2[2];
     if (pipe(fd1) == -1 || pipe(fd2) == -1) {
         perror("pipe");
         exit(1);
     }
-
-    pid_t pid1, pid2, pid3;
 
     pid1 = fork();
     if (pid1 == 0) {
