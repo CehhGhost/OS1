@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
         close(fd1[0]);
         close(fd2[1]);
 
-        char buffer[BUFSIZE];
+        char buf[BUFSIZE];
         int input_fd = open(argv[1], O_RDONLY);
         if (input_fd == -1) {
             perror("open input_file");
@@ -36,8 +36,8 @@ int main(int argc, char *argv[]) {
         }
 
         int bytes_read;
-        while ((bytes_read = read(input_fd, buffer, BUFSIZE)) > 0) {
-            write(fd1[1], buffer, bytes_read);
+        while ((bytes_read = read(input_fd, buf, BUFSIZE)) > 0) {
+            write(fd1[1], buf, bytes_read);
         }
 
         close(fd1[1]);
@@ -49,8 +49,8 @@ int main(int argc, char *argv[]) {
             exit(1);
         }
 
-        while ((bytes_read = read(fd2[0], buffer, BUFSIZE)) > 0) {
-            write(output_fd, buffer, bytes_read);
+        while ((bytes_read = read(fd2[0], buf, BUFSIZE)) > 0) {
+            write(output_fd, buf, bytes_read);
         }
 
         close(fd2[0]);
