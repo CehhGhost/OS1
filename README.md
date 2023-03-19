@@ -28,7 +28,7 @@
 ### 2) Приведено решение задачи на C:
 * [main.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/main.c)
 * [get_new_line.c](https://github.com/CehhGhost/OS1/blob/main/FirstProg/C%20code/get_new_line.c)
-* ### 3) Тесты:
+### 3) Тесты:
 * [input1.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/input1.txt)
 * [output1.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/output1.txt)
 * [input2.txt](https://github.com/CehhGhost/OS1/blob/main/FirstProg/Tests/input2.txt)
