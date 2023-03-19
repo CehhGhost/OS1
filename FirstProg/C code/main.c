@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    pid_t pid1, pid2;
+    pid_t pid1, pid2, pid3;
     int fd1[2], fd2[2];
 
     if (pipe(fd1) < 0 || pipe(fd2) < 0) {
@@ -29,8 +29,6 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     } else if (pid1 == 0) {
         close(fd1[0]);
-        close(fd2[0]);
-        close(fd2[1]);
 
         int fd = open(argv[1], O_RDONLY);
         if (fd < 0) {
@@ -53,6 +51,7 @@ int main(int argc, char *argv[]) {
             exit(EXIT_FAILURE);
         }
 
+        close(fd);
         close(fd1[1]);
 
         exit(EXIT_SUCCESS);
@@ -80,36 +79,45 @@ int main(int argc, char *argv[]) {
         close(fd1[0]);
         close(fd2[1]);
     }
-	close(fd1[0]);
-    close(fd1[1]);
-    close(fd2[1]);
 
-    int fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-    if (fd < 0) {
-        perror("open");
+    if ((pid3 = fork()) < 0) {
+        perror("fork");
         exit(EXIT_FAILURE);
-    }
+    } else if (pid3 == 0) {
+        close(fd2[1]);
 
-    char buf[BUFSIZE];
-    ssize_t n;
-
-    while ((n = read(fd2[0], buf, BUFSIZE)) > 0) {
-        if (write(fd, buf, n) != n) {
-            perror("write");
+        int fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+        if (fd < 0) {
+            perror("open");
             exit(EXIT_FAILURE);
         }
-    }
 
-    if (n < 0) {
-        perror("read");
-        exit(EXIT_FAILURE);
-    }
+        char buf[BUFSIZE];
+        ssize_t n;
 
-    close(fd);
+        while ((n = read(fd2[0], buf, BUFSIZE)) > 0) {
+            if (write(fd, buf, n) != n) {
+                perror("write");
+                exit(EXIT_FAILURE);
+            }
+        }
+
+        if (n < 0) {
+            perror("read");
+            exit(EXIT_FAILURE);
+        }
+
+        close(fd);
+        close(fd2[0]);
+    }
+    close(fd1[0]);
+    close(fd1[1]);
     close(fd2[0]);
+    close(fd2[1]);
 
     waitpid(pid1, NULL, 0);
     waitpid(pid2, NULL, 0);
+    waitpid(pid3, NULL, 0);
 
     return 0;
 }
