@@ -59,7 +59,6 @@ int main(int argc, char *argv[]) {
         }
 
         execlp("./get_new_line", "get_new_line", NULL);
-        perror("execlp");
 
         exit(0);
     }
