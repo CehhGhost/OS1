@@ -35,9 +35,9 @@ int main(int argc, char *argv[]) {
             exit(1);
         }
 
-        int bytes_read;
-        while ((bytes_read = read(input_fd, buf, BUFSIZE)) > 0) {
-            write(fd1[1], buf, bytes_read);
+        int n;
+        while ((n = read(input_fd, buf, BUFSIZE)) > 0) {
+            write(fd1[1], buf, n);
         }
 
         close(fd1[1]);
@@ -49,8 +49,8 @@ int main(int argc, char *argv[]) {
             exit(1);
         }
 
-        while ((bytes_read = read(fd2[0], buf, BUFSIZE)) > 0) {
-            write(output_fd, buf, bytes_read);
+        while ((n = read(fd2[0], buf, BUFSIZE)) > 0) {
+            write(output_fd, buf, n);
         }
 
         close(fd2[0]);
